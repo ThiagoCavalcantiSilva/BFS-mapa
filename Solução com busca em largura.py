@@ -41,7 +41,13 @@ def criar_mapa(tamanho, taxa_obstaculos):
 
     return mapa
 
+def imprimir_mapa(mapa):
+    for linha in mapa:
+        print(''.join(linha))
+    print()
+
 
 
 # Execução do algoritmo
 mapa = criar_mapa(TAMANHO, TAXA_OBSTACULOS)
+imprimir_mapa(mapa)
